@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School website</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section class="header-header">
+        <nav>
+            <a href="index.html" class="logo-container">
+                <img src="logo without bg 2.png" alt="School Logo">
+                <span class="swing">THE ROYALS</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="hideMenu()" aria-label="Close menu">
+                    <img src="WhatsApp Image 2024-10-17 at 09.19.09_730f82c4.jpg" alt="Close Menu" style="height: 16px;">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about .html">ABOUT</a></li>
+                    <li><a href="chaplain.html">CHAPLAINCY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" onclick="showMenu()" aria-label="Open menu">
+                <img src="WhatsApp Image 2024-10-17 at 09.41.06_bc19992e.jpg" alt="Open Menu" style="height: 16px;">
+            </div>
+
+        </nav>
+        <div class="text-box">
+            <h1>Maai-Mahiu boys' high school</h1>
+            <!-- <p>Welcome to Maai-Mahiu boys' high school where we shape the future of our students by giving them  the best education and instilling them with life skills
+                helping them to be indipedent and making them to be the royals. 
+            </p> -->
+            <a href="" class="hero-btn">Contact us to know more</a>
+        </div>
+    </section>
+<!-- Contact us -->
+<section class="location">
+    <h2>Our location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.624336773384!2d36.55042858831339!3d-0.9484569680128792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18292bfbdfa5eff9%3A0x6c864490317a6c4!2sMaai%20Mahiu%20Boys!5e0!3m2!1sen!2ske!4v1738931605253!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </section>
+ <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+
+            <div>
+                <span>
+                    <!-- <p>Visit our offices</p> -->
+                <div class="fa"><img src="WhatsApp Image 2024-10-17 at 09.22.26_c6cf5048.jpg" height="32px"   <h5>NAIVASHA,Maai-Mahiu</h5></div>
+                </span>
+                <span>
+                <!-- <p>Monday to Saturday, 10AM to 5PM</p> -->
+                <div class="fa"><img src="WhatsApp Image 2024-10-31 at 14.49.58_08e66227.jpg" height="32px"<h5><a href="tel:+254722811303">Call Us: +254 722811303</a>
+                    </h5></div>    
+                </span>
+                <span>
+                    <p>Email us for query</p>
+                <img src="WhatsApp Image 2024-10-31 at 14.49.58_5fa2fe0a.jpg " height="32px" <h5><a href="mailto:gideon1mwangi@gmail.com">maaimahiuboys@gmail.com</a>
+
+                </h5>
+                    
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="formhandle.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>   
+                <input type="email" name="email" placeholder="Enter your email address" required> 
+                <input type="text" name="subject" placeholder="Enter your suject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send message</button>  
+            </form>
+        </div>
+    </div>
+ </section>
+ <div class="whatsapp-container">
+    <a href="https://wa.me/254722811303?text=hello,,am requesting to know more about you" class="whatsapp-float" target="_blank">
+        <img src="WhatsApp Image 2025-01-27 at 15.40.16_6e06608e.jpg" alt="WhatsApp Chat">
+    </a>
+    <div class="whatsapp-text">Chat with us!</div>
+</div>
+
+      <!--Footer-->
+      <footer class="footer">
+        <h4>About Us</h4>
+        <p>You can reach out to us at any time or visit our school in Mai-Mahiu, Naivasha.
+            <br>We train our students in the best way ensuring they achieve excellence.
+        </p>
+        <div class="icon-container">
+            <a href="https://www.facebook.com/Maai-Mahiu-Boys-high-school" aria-label="Facebook"><img src="WhatsApp Image 2024-10-17 at 09.19.09_cc486556.jpg" alt="Facebook" class="icon"></a>
+            <a href="https://www.Twitter.com/mai_mahiu_boys high school" aria-label="Twitter"><img src="WhatsApp Image 2024-10-17 at 09.19.10_fd96c6c5.jpg" alt="Twitter" class="icon"></a>
+            <a href="https://www.instagram.com/maaimahiuboys" aria-label="Instagram"><img src="WhatsApp Image 2024-10-17 at 09.19.09_6639ef5b.jpg" alt="Instagram" class="icon"></a>
+        </div>
+        <p>© 2024 Mai-Mahiu Boys High School. All rights reserved.</p>
+    </footer>
+    <!--Javascript for toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+ </html> 
+ 

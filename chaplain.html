@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School website</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section class="header-header">
+        <nav>
+            <a href="index.html" class="logo-container">
+                <img src="logo without bg 2.png" alt="School Logo">
+                <span class="swing">THE ROYALS</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="hideMenu()" aria-label="Close menu">
+                    <img src="WhatsApp Image 2024-10-17 at 09.19.09_730f82c4.jpg" alt="Close Menu" style="height: 16px;">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about .html">ABOUT</a></li>
+                    <li><a href="chaplain.html">CHAPLAINCY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" onclick="showMenu()" aria-label="Open menu">
+                <img src="WhatsApp Image 2024-10-17 at 09.41.06_bc19992e.jpg" alt="Open Menu" style="height: 16px;">
+            </div>
+
+        </nav>
+        <div class="text-box">
+            <h1>Maai-Mahiu boys' high school</h1>
+            <!-- <p>Welcome to Maai-Mahiu boys' high school where we shape the future of our students by giving them  the best education and instilling them with life skills
+                helping them to be indipedent and making them to be the royals. 
+            </p> -->
+            <a href="icon-container" class="hero-btn">Contact us to know more</a>
+        </div>
+    </section>
+    <div class="whatsapp-container">
+        <a href="https://wa.me/254722811303?text=hello,,am requesting to know more about you" class="whatsapp-float" target="_blank">
+            <img src="WhatsApp Image 2025-01-27 at 15.40.16_6e06608e.jpg" alt="WhatsApp Chat">
+        </a>
+        <div class="whatsapp-text">Chat with us!</div>
+    </div>
+    <section class="chapel">
+        <h1>Our school faith</h1>
+        <p>Our school has freedom for worship but we highly encourage our 
+            students to follow on christian since our school is under the christian church(A.C.K).<br>
+            Our services are usually carried at the school hole which is capable of holding
+             about 1200 students ar more hence a good worship experience.<br>
+            Our school usually has three services in a week which are as follows:<br>
+            Friday;(4:20-5:45)pm<br>
+            Saturday;(6:45-9:00)pm<br>
+            Sunday;(8:00-10:45)am
+        </p>
+            
+    <section class="facilities">
+        <h1>Our Christian Union</h1>
+        <p>Our school acknoledges faith matters and outs God first</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Screenshot_20241028-225157.jpg">
+                <h3>Students praying</h3>
+                <p>We encourage our srudents to engage in prayers services to secure their destinies to the Lord</p>
+            </div>
+            <div class="facilities-col">
+                <img src="Screenshot_20241028-225537.jpg">
+                <h3>C.U farewells</h3>
+                <p>As Christians we engae in farewell party when our students are almost doing their K.C.S.E 
+                    that is at the end of every year trying to bring love and unity amongest our 
+                    students.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Screenshot_20241028-230859.jpg">
+                <h3>C.U Patron</h3>
+                <p>our C.U has a patron who help students in solving matters related 
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Screenshot_20241028-225505.jpg">
+                <h3>C.U podium</h3>
+                <p>Our christian nion has a good podium where we give our guests 
+                    and miniters a place to put on their belongings.
+                </p> 
+            </div>
+        </div>
+        <p>Our school believes in putting God first and hence all students are encouraged to attend at the Christian union services or the YCS(Young Catholic Services).
+            Members are also given a chance to go and worship with other students oftenly during the weekend challenge 
+            and also in other activities like visiting the Subukia shrines for the catholics.
+            Our teams are also well  arranged for different activities in the school like 
+            leading students for morning prayers daily and also the intersesory sevices which are held daily 
+            after preps to help our students grow spritually.Also students who have issues 
+            concerning faith matters are adviced to approach our Patrons for either 
+            CU,YCS or SDA to get the help if possible.We also  holds weekend challenges annualy where 
+            we host other ministers to help us spiritually.Despite inviting them on weekend challenges 
+            we make sure every Sunday there is ministers who are invited to preach to our students and 
+             also to our staff
+        </p>
+    </section>
+    </section>
+     <!--Footer-->
+      <section class="footer">
+        <h4>About us</h4>
+        <p>you can reach out to us at any time you feel or visit our school at Mai-Mahiu Naivasha
+            <br>we train our students in the best way ensuring they are the best
+        </p>
+        <div class="icons">
+            <a href="https://www.facebook.com/Maai-Mahiu-Boys-high-school" aria-label="Facebook"><img src="WhatsApp Image 2024-10-17 at 09.19.09_cc486556.jpg" alt="Facebook" class="icon"></a>
+            <a href="https://www.Twitter.com/mai_mahiu_boys high school" aria-label="Twitter"><img src="WhatsApp Image 2024-10-17 at 09.19.10_fd96c6c5.jpg" alt="Twitter" class="icon"></a>
+            <a href="https://www.instagram.com/maaimahiuboys" aria-label="Instagram"><img src="WhatsApp Image 2024-10-17 at 09.19.09_6639ef5b.jpg" alt="Instagram" class="icon"></a>
+        </div>
+        <p>@copyrights 2024Maai-Mahiu boys</p>
+    </section>
+    <!--Javascript for toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

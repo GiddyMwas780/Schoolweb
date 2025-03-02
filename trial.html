@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School website</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="trial.css">
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo-container">
+                <img src="logo without bg 2.png" alt="School Logo">
+                <span class="swing">THE ROYALS</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="hideMenu()" aria-label="Close menu">
+                    <img src="WhatsApp Image 2024-10-17 at 09.19.09_730f82c4.jpg" alt="Close Menu" style="height: 16px;">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about .html">ABOUT</a></li>
+                    <li><a href="chaplain.html">CHAPLAINCY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" onclick="showMenu()" aria-label="Open menu">
+                <img src="WhatsApp Image 2024-10-17 at 09.41.06_bc19992e.jpg" alt="Open Menu" style="height: 16px;">
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Maai-Mahiu boys' high school</h1>
+            <p>Welcome to Maai-Mahiu boys' high school where we shape the future of our students by giving them  the best education and instilling them with life skills
+                helping them to be independent and making them to be the royals. 
+            </p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <script>
+        // Select the nav-links element
+        var navLinks = document.getElementById("navLinks");
+
+        // Function to show the menu (adds the 'active' class)
+        function showMenu() {
+            navLinks.classList.add("active");
+        }
+
+        // Function to hide the menu (removes the 'active' class)
+        function hideMenu() {
+            navLinks.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
